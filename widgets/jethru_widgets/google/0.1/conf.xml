@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.GoogleWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Google Maps</label>
+  <description>Google Maps</description>
+</widget>
