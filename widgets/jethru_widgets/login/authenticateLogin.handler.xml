@@ -1,0 +1,4 @@
+<requestHandler>
+	<class>tooltwist.jethru.requestHandlers.AuthenticateLoginRequestHandler</class>
+	<description>Authentication of Credentials of Students</description>
+</requestHandler>

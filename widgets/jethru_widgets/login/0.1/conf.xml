@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.LoginWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Login Widget for Students</label>
+  <description>Login Widget</description>
+</widget>

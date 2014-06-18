@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.CommentWidgetWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Comment Widget</label>
+  <description>Comment Widget</description>
+</widget>

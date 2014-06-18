@@ -1,0 +1,14 @@
+/* Styles for widget userList */
+
+.UserList .someClass {
+}
+
+table tr th{
+	background: #55AFF4;
+	padding: 10px;
+	font-family: 'Helvetica neue';
+}
+table tr td{
+	text-align: center;
+	padding: 5px;
+	font-family: 'Helvetica neue';

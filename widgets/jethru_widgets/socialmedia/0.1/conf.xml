@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.SocialmediaWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Social Media</label>
+  <description>Social Media</description>
+</widget>

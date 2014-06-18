@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.StudentListWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Student List</label>
+  <description>Student List Widget</description>
+</widget>

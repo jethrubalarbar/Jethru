@@ -1,0 +1,4 @@
+<requestHandler>
+	<class>tooltwist.jethru.requestHandlers.UpdateUserRequestHandler</class>
+	<description>Handler to Update User</description>
+</requestHandler>

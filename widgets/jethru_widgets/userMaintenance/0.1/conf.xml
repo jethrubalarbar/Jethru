@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.UserMaintenanceWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>User Maintenance</label>
+  <description>User Maintenance Widget</description>
+</widget>

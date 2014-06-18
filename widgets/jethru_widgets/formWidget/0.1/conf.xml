@@ -1,0 +1,6 @@
+<widget>
+  <widgetClass>tooltwist.jethru.widgets.FormWidgetWidget</widgetClass>
+  <idWithinRootWidget>0</idWithinRootWidget>
+  <label>Form Widget</label>
+  <description>Form Widget</description>
+</widget>

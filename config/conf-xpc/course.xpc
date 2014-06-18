@@ -1,0 +1,9 @@
+<xpcConfig>
+	<entityType name="phinza.V.skyAdvertiser">
+		<description>Select Course Info</description>
+		  <method>
+			<name>select</name>
+			<class>tooltwist.skystudent.xpc.AdvertiserPlugin</class>
+		  </method>
+	</entityType>
+</xpcConfig>

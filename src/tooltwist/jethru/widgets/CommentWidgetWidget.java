@@ -16,34 +16,25 @@ import tooltwist.wbd.WbdStringProperty;
 import tooltwist.wbd.WbdWidget;
 import tooltwist.wbd.WbdWidgetController;
 import tooltwist.wbd.WbdProductionHelper;
-//import tooltwist.jethru.productionHelpers.GoogleProductionHelper;
+//import tooltwist.jethru.productionHelpers.CommentWidgetProductionHelper;
 import com.dinaa.ui.UimData;
 import com.dinaa.ui.UimHelper;
 
 /**
- * Google Maps
+ * Comment Widget
  */
-public class GoogleWidget extends WbdWidgetController
+public class CommentWidgetWidget extends WbdWidgetController
 {
-	private static final String SNIPPET_PREVIEW = "google_preview.html";
-	private static final String SNIPPET_DESIGN = "google_design.html";
-	private static final String SNIPPET_PRODUCTION = "google_production.jsp";
+	private static final String SNIPPET_PREVIEW = "commentWidget_preview.html";
+	private static final String SNIPPET_DESIGN = "commentWidget_design.html";
+	private static final String SNIPPET_PRODUCTION = "commentWidget_production.jsp";
 	private static final boolean USE_PRODUCTION_HELPER = false;
 
 	@Override
 	protected void init(WbdWidget instance) throws WbdException
 	{
 		instance.defineProperty(new WbdStringProperty("elementId", null, "Id", ""));
-		instance.defineProperty(new WbdStringProperty("width", null, "Width", "950"));
-		instance.defineProperty(new WbdStringProperty("height", null, "Height", "300"));
-		instance.defineProperty(new WbdStringProperty("style", null, "Style", "ROADMAP"));
-		instance.defineProperty(new WbdStringProperty("zoom", null, "Zoom", "9"));
-		instance.defineProperty(new WbdStringProperty("marker1", null, "First Marker Point", "9"));
-		instance.defineProperty(new WbdStringProperty("marker2", null, "Second Marker Point", "9"));
-		instance.defineProperty(new WbdStringProperty("marker3", null, "Third Marker Point", "9"));
-		instance.defineProperty(new WbdStringProperty("marker4", null, "Fourth Marker Point", "9"));
-		instance.defineProperty(new WbdStringProperty("marker5", null, "Fifth Marker Point", "9"));
-
+//		instance.defineProperty(new WbdStringProperty("myProperty", null, "My Property", ""));
 //		instance.defineProperty(new WbdNavPointProperty("navpoint", null, "Navpoint", ""));
 	}
 	
@@ -58,7 +49,7 @@ public class GoogleWidget extends WbdWidgetController
 			CodeInserter[] arr = {
 
 //				// Include a CSS snippet
-//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "google_cssHeader.css")),
+//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "commentWidget_cssHeader.css")),
 			};
 			codeInserterList.add(arr);
 		}
@@ -73,10 +64,10 @@ public class GoogleWidget extends WbdWidgetController
 //				new StylesheetLinkInserter(cssUrl),
 
 //				// Include a javascript snippet 
-//				new JavascriptCodeInserter(instance.miscellaneousFilePath(generator, "google_jsHeader.js")),
+//				new JavascriptCodeInserter(instance.miscellaneousFilePath(generator, "commentWidget_jsHeader.js")),
 
 //				// Include a CSS snippet
-//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "google_cssHeader.css")),
+//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "commentWidget_cssHeader.css")),
 			};
 			codeInserterList.add(arr);
 		}
@@ -91,10 +82,10 @@ public class GoogleWidget extends WbdWidgetController
 //				new StylesheetLinkInserter(cssUrl),
 					
 //				// Include a javascript snippet 
-//				new JavascriptCodeInserter(instance.miscellaneousFilePath(generator, "google_jsHeader.js")),
+//				new JavascriptCodeInserter(instance.miscellaneousFilePath(generator, "commentWidget_jsHeader.js")),
 					
 //				// Include a CSS snippet
-//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "google_cssHeader.css")),
+//				new StylesheetCodeInserter(instance.miscellaneousFilePath(generator, "commentWidget_cssHeader.css")),
 
 //				// Add import statements to the JSP
 //				new PageImportCodeInserter(XData.class.getName()),
@@ -104,8 +95,8 @@ public class GoogleWidget extends WbdWidgetController
 			if (USE_PRODUCTION_HELPER)
 			{
 				SnippetParam[] productionHelperParams = null;
-//				codeInserterList.add(WbdProductionHelper.codeInserter(instance, GoogleProductionHelper.class.getName(), productionHelperParams));
-//				codeInserterList.add(new PageImportCodeInserter(GoogleProductionHelper.class.getName()));
+//				codeInserterList.add(WbdProductionHelper.codeInserter(instance, CommentWidgetProductionHelper.class.getName(), productionHelperParams));
+//				codeInserterList.add(new PageImportCodeInserter(CommentWidgetProductionHelper.class.getName()));
 			}
 		}
 
@@ -114,7 +105,7 @@ public class GoogleWidget extends WbdWidgetController
 	@Override
 	public String getLabel(WbdWidget instance) throws WbdException
 	{
-		return "Google Maps";
+		return "Comment Widget";
 	}
 	
 	@Override
@@ -144,27 +135,10 @@ public class GoogleWidget extends WbdWidgetController
 	}
 	
 	private SnippetParam[] getSnippetParams(WbdGenerator generator, WbdWidget instance, UimData ud) throws WbdException {
-		String width = instance.getProperty("width", null);
-		String height = instance.getProperty("height", null);
-		String style = instance.getProperty("style", null);
-		String zoom = instance.getProperty("zoom", null);
-		String marker1 = instance.getProperty("marker1", null);
-		String marker2 = instance.getProperty("marker2", null);
-		String marker3 = instance.getProperty("marker3", null);
-		String marker4 = instance.getProperty("marker4", null);
-		String marker5 = instance.getProperty("marker5", null);
+//		String myProperty = instance.getProperty("myProperty", null);
 //		String myNavpoint = instance.getProperty("myNavpoint", null);
 		SnippetParam[] params = {
-			new SnippetParam("width", width),
-			new SnippetParam("height", height),
-			new SnippetParam("style", style),
-			new SnippetParam("zoom", zoom),
-			new SnippetParam("marker1", marker1),
-			new SnippetParam("marker2", marker2),
-			new SnippetParam("marker3", marker3),
-			new SnippetParam("marker4", marker4),
-			new SnippetParam("marker5", marker5)
-			
+//			new SnippetParam("myProperty", myProperty),
 //			new SnippetParam("myNavpoint", myNavpoint)
 		};
 		return params;

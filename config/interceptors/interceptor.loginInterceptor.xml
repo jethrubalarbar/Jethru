@@ -1,0 +1,4 @@
+<interceptor>
+	<class>tooltwist.jethru.interceptors.LoginInterceptorInterceptor</class>
+	<description>Login Interceptor</description>
+</interceptor>
